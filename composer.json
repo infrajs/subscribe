@@ -1,0 +1,6 @@
+{
+	"name": "itlife/subscribe",
+	"autoload": {
+		"psr-4": { "itlife\\subscribe\\": "/" }
+	}
+}

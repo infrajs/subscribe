@@ -1,0 +1,5 @@
+{
+	"tpl":"*subscribe/subscribe.tpl",
+	"data":true,
+	"onsubmit":true
+}
