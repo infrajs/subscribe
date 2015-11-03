@@ -2,5 +2,9 @@
 	"tpl":"*subscribe/subscribe.tpl",
 	"data":true,
 	"autosavename":"user",
-	"onsubmit":true
+	"onsubmit":true,
+	"config":{
+		"placeholder":"Email",
+		"submit":"Подписаться"
+	}
 }
