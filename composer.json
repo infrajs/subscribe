@@ -1,10 +1,9 @@
 {
-	"name": "itlife/subscribe",
+	"name": "infrajs/subscribe",
 	"requireold": {
-		"itlife/infrajs":"~1",
-		"itlife/popup":"~1"
+		"infrajs/popup":"~1"
 	},
 	"autoload": {
-		"psr-4": { "itlife\\subscribe\\": "/" }
+		"psr-4": { "infrajs\\subscribe\\": "/" }
 	}
 }
