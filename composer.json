@@ -1,6 +1,6 @@
 {
 	"name": "itlife/subscribe",
-	"require": {
+	"requireold": {
 		"itlife/infrajs":"~1",
 		"itlife/popup":"~1"
 	},
