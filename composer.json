@@ -1,5 +1,6 @@
 {
 	"name": "infrajs/subscribe",
+	"homepage":"https://github.com/infrajs/subscribe",
 	"requireold": {
 		"infrajs/popup":"~1"
 	},
