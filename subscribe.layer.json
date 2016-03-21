@@ -1,5 +1,5 @@
 {
-	"tpl":"*subscribe/subscribe.tpl",
+	"tpl":"-subscribe/subscribe.tpl",
 	"data":true,
 	"autosavename":"user",
 	"onsubmit":true,
