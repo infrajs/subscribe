@@ -1,8 +1,15 @@
 {
 	"name": "infrajs/subscribe",
 	"homepage":"https://github.com/infrajs/subscribe",
-	"requireold": {
-		"infrajs/popup":"~1"
+	"require": {
+		"infrajs/popup":"~1",
+		"infrajs/config":"~1",
+		"infrajs/ans":"~1",
+		"infrajs/path":"~1",
+		"infrajs/load":"~1",
+		"infrajs/access":"~1",
+		"infrajs/template":"~1",
+		"infrajs/mail":"~1"
 	},
 	"autoload": {
 		"psr-4": { "infrajs\\subscribe\\": "/" }
