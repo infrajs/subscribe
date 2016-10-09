@@ -5,6 +5,7 @@
 	"onsubmit":true,
 	"config":{
 		"placeholder":"Email",
-		"submit":"Подписаться"
+		"submit":"Подписаться",
+		"btnclass":"btn-success",
 	}
 }

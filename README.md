@@ -6,13 +6,23 @@
 ```json
 {
   "require":{
-    "akiyatkin/subscribe":"~1"
+    "infrajs/subscribe":"~1"
   }
 }
 ```
 
 ## Использование
 
-Подкючить слой
+Подкючить слой и указать в нём нужные параметры
+```
+{
+	"external":"-subscribe/subscribe.layer.json",
+	"config":{
+		"placeholder":"Email",
+		"submit":"Подписаться",
+		"btnclass":"btn-success",
+	}
+}
+```
 
 
