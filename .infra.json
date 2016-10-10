@@ -1,3 +1,9 @@
 {
-	"msg":"Необходимо указать email или номер телефона!"
+	"msg":"Необходимо указать email или номер телефона!",
+	"clutch":{
+		"jquery.maskedinput":[
+			"vendor/etdsolutions/",
+			"vendor/infrajs/subscribe/"
+		]
+	}
 }

@@ -18,6 +18,7 @@
 {
 	"external":"-subscribe/subscribe.layer.json",
 	"config":{
+		"mask":"+7 (999) 999-9999",
 		"placeholder":"Email",
 		"submit":"Подписаться",
 		"btnclass":"btn-success",

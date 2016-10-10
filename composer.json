@@ -8,8 +8,10 @@
 		"infrajs/path":"~1",
 		"infrajs/load":"~1",
 		"infrajs/access":"~1",
+		"ded/domready":"~1",
 		"infrajs/template":"~1",
-		"infrajs/mail":"~1"
+		"infrajs/mail":"~1",
+		"etdsolutions/jquery.maskedinput":"~1"
 	},
 	"autoload": {
 		"psr-4": { "infrajs\\subscribe\\": "/" }

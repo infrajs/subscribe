@@ -3,7 +3,9 @@
 	"data":true,
 	"autosavename":"user",
 	"onsubmit":true,
+	"domready":true,
 	"config":{
+		"mask":false,
 		"placeholder":"Email",
 		"submit":"Подписаться",
 		"btnclass":"btn-success",
