@@ -8,6 +8,6 @@
 		"mask":false,
 		"placeholder":"Email",
 		"submit":"Подписаться",
-		"btnclass":"btn-success",
+		"btnclass":"btn-success"
 	}
 }
