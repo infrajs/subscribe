@@ -6,6 +6,26 @@
 				<button class="btn {config.btnclass}" type="submit">{config.submit}</button>
 			</span>
 		</div>
+		<script>
+			domready( function () {
+				Event.one('Controller.onshow', function () {
+					var layer = Controller.ids["{id}"];
+					layer.onsubmit = function (layer) {
+						var ans = layer.config.ans;
+						if (!ans.result) return;
+						if (!Ya || !Ya._metrika.counter) {
+							var ya = Ya._metrika.counter;
+							console.info('ya.reachGoal subscribe');
+							ya.reachGoal('subscribe');
+						}
+						if (window.ga) {
+							console.info('ga send event subscribe');
+							ga('send', 'event', 'subscribe');
+						}
+					}
+				});
+			});
+		</script>
 		{config.mask?:mask}
 	</form>
 {mask:}
