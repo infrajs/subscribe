@@ -29,9 +29,10 @@ $_SESSION['submit_time'] = time();
 
 
 $data = array('email' => $email, 'agent' => $agent, 'ip' => $ip, 'host' => $_SERVER['HTTP_HOST']);
+$data['date'] = date('d-m-Y', time());
+$data['time'] = date('H:i:s', time());
 $body = Template::parse('-subscribe/subscribe.mail.tpl', $data);
 Mail::toAdmin('Запрос '.$data['host'].' '.$email, 'noreplay@'.$data['host'], $body);
-
 
 $src = Path::resolve('~.subscribe.json');
 $subs = Load::loadJSON($src);
