@@ -1,5 +1,5 @@
 {root:}
-	<form action="/-subscribe/subscribe.php">
+	<form action="/-subscribe/hand.php">
 		<div class="input-group">
 			<input type="text" id="infrajssubscribe{id}" class="form-control" name="email" placeholder="{config.placeholder}">
 			<span class="input-group-btn">
