@@ -13,15 +13,7 @@
 					layer.onsubmit = function (layer) {
 						var ans = layer.config.ans;
 						if (!ans.result) return;
-						if (!Ya || !Ya._metrika.counter) {
-							var ya = Ya._metrika.counter;
-							console.info('ya.reachGoal subscribe');
-							ya.reachGoal('subscribe');
-						}
-						if (window.ga) {
-							console.info('ga send event subscribe');
-							ga('send', 'event', 'subscribe');
-						}
+						Goal.reach('subscribe');
 					}
 				});
 			});

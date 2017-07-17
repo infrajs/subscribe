@@ -11,6 +11,7 @@
 		"ded/domready":"~1",
 		"infrajs/template":"~1",
 		"infrajs/mail":"~1",
+		"akiyatkin/goal":"~1",
 		"etdsolutions/jquery.maskedinput":"~1"
 	},
 	"autoload": {
