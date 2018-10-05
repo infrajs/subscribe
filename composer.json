@@ -8,6 +8,7 @@
 		"infrajs/path":"~1",
 		"infrajs/load":"~1",
 		"infrajs/access":"~1",
+		"infrajs/recaptcha":"~1",
 		"ded/domready":"~1",
 		"infrajs/template":"~1",
 		"infrajs/mail":"~1",

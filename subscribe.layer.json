@@ -3,7 +3,7 @@
 	"data":true,
 	"autosavename":"user",
 	"onsubmit":true,
-	"domready":true,
+	"goal":"subscribe",
 	"config":{
 		"mask":false,
 		"placeholder":"Email",

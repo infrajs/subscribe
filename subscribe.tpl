@@ -1,12 +1,23 @@
 {root:}
 	<form action="/-subscribe/hand.php">
+		<p>
+			<div id="recaptcha{id}" class="g-recaptcha"  data-sitekey="{~conf.recaptcha.sitekey}"></div>
+		</p>
 		<div class="input-group">
-			<input type="text" id="infrajssubscribe{id}" class="form-control" name="email" placeholder="{config.placeholder}">
+			<input type="text" id="infrajssubscribe{id}" class="form-control" name="emailphone" placeholder="{config.placeholder}">
 			<span class="input-group-btn">
 				<button class="btn {config.btnclass}" type="submit">{config.submit}</button>
 			</span>
 		</div>
+
 		<script>
+			domready(function () {
+				Event.one('reCAPTCHA', function (){
+					grecaptcha.render('recaptcha{id}');
+				});
+			});
+		</script>
+		<!--<script>
 			domready( function () {
 				Event.one('Controller.onshow', function () {
 					var layer = Controller.ids["{id}"];
@@ -17,7 +28,7 @@
 					}
 				});
 			});
-		</script>
+		</script>-->
 		{config.mask?:mask}
 	</form>
 {mask:}

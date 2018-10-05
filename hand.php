@@ -6,17 +6,23 @@ use infrajs\load\Load;
 use infrajs\access\Access;
 use infrajs\template\Template;
 use infrajs\mail\Mail;
+use akiyatkin\recaptcha\Recaptcha;
+
 
 $ans = array();
 $ans['popup'] = true;
 $conf = Config::get('subscribe');
-if (empty($_REQUEST['email'])) {
+
+$r = Recaptcha::check();
+if (!$r) return Ans::err($ans, 'Не пройдена защита Антибот');
+
+if (empty($_REQUEST['emailphone'])) {
 	return Ans::err($ans, $conf['msg']);
 }
-if (strlen($_REQUEST['email']) > 1000) {
+if (strlen($_REQUEST['emailphone']) > 1000) {
 	return Ans::err($ans, 'Слишком много данных. '.$conf['msg']);
 }
-$email = strip_tags($_REQUEST['email']);
+$email = strip_tags($_REQUEST['emailphone']);
 $email = trim($email);
 $email = Path::encode($email);
 $agent = $_SERVER['HTTP_USER_AGENT'];
