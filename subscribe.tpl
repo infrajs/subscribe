@@ -1,14 +1,15 @@
 {root:}
 	<form action="/-subscribe/hand.php">
-		<p>
-			<div id="recaptcha{id}" class="g-recaptcha"  data-sitekey="{~conf.recaptcha.sitekey}"></div>
-		</p>
+		
 		<div class="input-group">
 			<input type="text" id="infrajssubscribe{id}" class="form-control" name="emailphone" placeholder="{config.placeholder}">
 			<span class="input-group-btn">
 				<button class="btn {config.btnclass}" type="submit">{config.submit}</button>
 			</span>
 		</div>
+		<p>
+			<div id="recaptcha{id}" class="g-recaptcha"  data-sitekey="{~conf.recaptcha.sitekey}"></div>
+		</p>
 
 		<script>
 			domready(function () {
