@@ -8,7 +8,7 @@
 			</span>
 		</div>
 		<p>
-			<div id="recaptcha{id}" class="g-recaptcha"  data-sitekey="{~conf.recaptcha.sitekey}"></div>
+			<div id="recaptcha{id}" class="g-recaptcha" style="overflow:hidden"  data-sitekey="{~conf.recaptcha.sitekey}"></div>
 		</p>
 
 		<script>
