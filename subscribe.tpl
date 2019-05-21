@@ -7,9 +7,9 @@
 				<button class="btn {config.btnclass}" type="submit">{config.submit}</button>
 			</span>
 		</div>
-		<p>
-			<div id="recaptcha{id}" class="g-recaptcha" style="overflow:hidden"  data-sitekey="{~conf.recaptcha.sitekey}"></div>
-		</p>
+		<p></p>
+		<div id="recaptcha{id}" class="g-recaptcha" style="overflow:hidden"  data-sitekey="{~conf.recaptcha.sitekey}"></div>
+		
 
 		<script>
 			domready(function () {
