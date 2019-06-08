@@ -14,7 +14,19 @@
 		<script>
 			domready(function () {
 				Event.one('reCAPTCHA', function (){
-					grecaptcha.render('recaptcha{id}');
+					if ('IntersectionObserver' in window) {
+						var re = document.getElementById('recaptcha{id}');
+						var inter = new IntersectionObserver(function (entry) {
+							if (!entry[0].isIntersecting) return;
+							grecaptcha.render('recaptcha{id}');	
+							inter.disconnect()
+						});
+
+						inter.observe(re);
+					} else { 
+						grecaptcha.render('recaptcha{id}');
+					}
+					
 				});
 			});
 		</script>
