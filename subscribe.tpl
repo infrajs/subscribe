@@ -16,6 +16,7 @@
 				Event.one('reCAPTCHA', function (){
 					if ('IntersectionObserver' in window) {
 						var re = document.getElementById('recaptcha{id}');
+						if (!re) return;
 						var inter = new IntersectionObserver(function (entry) {
 							if (!entry[0].isIntersecting) return;
 							grecaptcha.render('recaptcha{id}');	
