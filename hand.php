@@ -13,6 +13,11 @@ $ans = array();
 $ans['popup'] = true;
 $conf = Config::get('subscribe');
 
+$contconf = Config::get('contacts');
+if (!empty($contconf['terms'])) {
+	if (empty($_REQUEST['terms'])) return Ans::err($ans, 'Вам нужно принять политику конфиденциальности!');
+}
+
 $r = Recaptcha::check();
 if (!$r) return Ans::err($ans, 'Не пройдена защита Антибот');
 
