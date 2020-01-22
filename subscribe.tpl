@@ -1,14 +1,14 @@
 {cont::}-contacts/contacts.tpl
 {root:}
 	<form action="/-subscribe/hand.php">
-		{~conf.contacts.terms?:cont.terms}
+		
 		<div class="input-group">
 			<input type="text" id="infrajssubscribe{id}" class="form-control" name="emailphone" placeholder="{config.placeholder}">
 			<span class="input-group-btn">
 				<button class="btn {config.btnclass}" type="submit">{config.submit}</button>
 			</span>
 		</div>
-		<p></p>
+		<p>{~conf.contacts.terms?:cont.terms}</p>
 		<div id="recaptcha{id}" class="g-recaptcha" style="overflow:hidden"  data-sitekey="{~conf.recaptcha.sitekey}"></div>
 		
 
